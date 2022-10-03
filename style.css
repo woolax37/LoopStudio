@@ -1,37 +1,116 @@
-header {
-  background-image: url("./maquette-main/loopstudios-landing-page-main/images/mobile/image-hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+/* -----------------------container 80% -------------------------*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* -----------------------Hero -------------------------*/
+
+.header1 {
+  background: url("./maquette-main/loopstudios-landing-page-main/images/desktop/image-hero.jpg")
+    center/cover;
   height: 100vh;
-  position: relative;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 40px;
 }
 
 nav {
   display: flex;
-  margin: 0;
+  margin: 50px 0px;
 }
 
 ul {
   display: flex;
+  padding: 0px;
 }
 li {
   margin: 0px 20px;
+  font-family: "Alata", sans-serif;
+  list-style: none;
 }
 h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 150px;
+  width: 50%;
   text-transform: uppercase;
   color: white;
-  font-size: 40px;
+  font-size: 60px;
   border: 3px solid;
-  padding: 30px;
+  padding: 30px 30px 30px 30px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* -----------------------Main/ Section 1  -------------------------*/
+
+.section1 {
+  margin-top: 150px;
+  position: relative;
+}
+
+.section1text {
+  position: absolute;
+  top: 70%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.section1text h2 {
+  font-size: 48px;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 60px 40px 10px 40px;
+  text-align: center;
+}
+.section1text p {
+  font-family: "Alata";
+  font-weight: 100;
+  text-align: center;
+  padding: 20px 100px 10px 100px;
+}
+
+/* -----------------------Main/ Section2  -------------------------*/
+
+.header2 {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header2 h2 {
+  font-size: 48px;
+  font-family: "Josefin Sans";
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.header2 button {
+  background-color: #000000;
+  color: white;
+  font-family: "Alata";
+  padding: 5px 25px;
+  letter-spacing: 4px;
+  margin-right: 350px;
+}
+
+.img-creations {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.img-creations ul li {
+  margin-bottom: 20px;
+  pad: 0px;
+}
+
+/* -----------------------footer-------------------------*/
+footer {
+  background-color: #000000;
 }
