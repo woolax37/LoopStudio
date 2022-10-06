@@ -5,6 +5,7 @@ body {
   text-align: center;
 }
 
+<<<<<<< HEAD
 li {
   list-style: none;
   font-family: "Alata";
@@ -23,6 +24,8 @@ h2 {
   text-transform: uppercase;
   color: black;
 }
+=======
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
 // header -------------------
 
 .header1 {
@@ -37,6 +40,7 @@ h2 {
     "nav nav"
     "titre titre";
 
+<<<<<<< HEAD
   @media screen and (min-width: 1400px) {
     background: url("./maquette-main/loopstudios-landing-page-main/images/desktop/image-hero.jpg")
       center/cover;
@@ -44,10 +48,16 @@ h2 {
     grid-template-areas:
       "nav nav"
       "titre x";
+=======
+  @media screen and (min-width: 1000px) {
+    background: url("./maquette-main/loopstudios-landing-page-main/images/desktop/image-hero.jpg")
+      center/cover;
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
   }
   .container-title {
     grid-area: titre;
   }
+<<<<<<< HEAD
 
   h1 {
     text-align: start;
@@ -205,10 +215,127 @@ footer {
       margin: 0;
     }
 
+=======
+
+  h1 {
+    text-align: start;
+    border: 2px solid white;
+    text-transform: uppercase;
+    padding: 30px;
+    margin: 20px;
+    font-family: "Josefin Sans";
+    font-size: 2.6rem;
+  }
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px 30px 0px 30px;
+  grid-area: nav;
+
+  ul {
+    display: none;
+  }
+}
+
+// 1ere section -------------------
+
+.section1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin: 90px 30px 0px 30px;
+  align-items: stretch;
+  justify-items: center;
+
+  .section1text {
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Alata";
+    font-weight: 100;
+    margin-bottom: 40px;
+
+    h2 {
+      font-family: "Josefin Sans";
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 40px 0px;
+    }
+  }
+}
+
+// 2eme section -------------------
+
+.section2 {
+  h2 {
+    margin-bottom: 30px;
+    font-family: "Josefin Sans";
+  }
+
+  button {
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 50px;
+    font-family: "Alata";
+    letter-spacing: 0.3rem;
+  }
+
+  .img-creations {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    .card-creation {
+      display: grid;
+      align-items: center;
+
+      * {
+        grid-area: 1 / 1 / -1 / -1;
+        text-align: left;
+        color: white;
+      }
+
+      p {
+        padding-left: 20px;
+        text-transform: uppercase;
+        font-family: "Josefin Sans";
+      }
+    }
+
+    li {
+      margin: 10px 0px;
+    }
+  }
+}
+
+// footer -------------------
+
+footer {
+  background-color: black;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  justify-items: center;
+  color: white;
+  margin-top: 110px;
+
+  .topfooter {
+    margin: 30px 0;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
     .logo {
       margin-top: 20px;
       margin-bottom: 40px;
       width: 85%;
+<<<<<<< HEAD
       @media screen and (min-width: 1400px) {
         margin-top: 3rem;
         margin-bottom: 0;
@@ -228,10 +355,17 @@ footer {
         @media screen and (min-width: 1400px) {
           margin-right: 3.2rem;
         }
+=======
+    }
+    .list-top {
+      li {
+        margin-bottom: 20px;
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
       }
     }
   }
   .bottomfooter {
+<<<<<<< HEAD
     @media screen and (min-width: 1400px) {
       display: flex;
       flex-direction: column;
@@ -244,14 +378,19 @@ footer {
       color: gray;
       line-height: 2.5rem;
     }
+=======
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
     .list-footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+<<<<<<< HEAD
       @media screen and (min-width: 1400px) {
         display: flex;
         width: 60%;
       }
+=======
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
     }
   }
 }

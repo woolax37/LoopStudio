@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 body {
   text-align: center;
+<<<<<<< HEAD
 }
 
 li {
@@ -17,6 +18,8 @@ h2 {
   font-weight: 300;
   text-transform: uppercase;
   color: black;
+=======
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
 }
 
 .header1 {
@@ -28,11 +31,17 @@ h2 {
   grid-template-rows: 1fr, 1fr;
   grid-template-areas: "nav nav" "titre titre";
 }
+<<<<<<< HEAD
 @media screen and (min-width: 1400px) {
   .header1 {
     background: url("./maquette-main/loopstudios-landing-page-main/images/desktop/image-hero.jpg") center/cover;
     padding: 0px 100px;
     grid-template-areas: "nav nav" "titre x";
+=======
+@media screen and (min-width: 1000px) {
+  .header1 {
+    background: url("./maquette-main/loopstudios-landing-page-main/images/desktop/image-hero.jpg") center/cover;
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
   }
 }
 .header1 .container-title {
@@ -45,9 +54,13 @@ h2 {
   padding: 30px;
   margin: 20px;
   font-family: "Josefin Sans";
+<<<<<<< HEAD
   font-weight: 300;
   line-height: 3.8rem;
   font-size: 4rem;
+=======
+  font-size: 2.6rem;
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
 }
 
 .navbar-header {
@@ -57,6 +70,7 @@ h2 {
   margin: 40px 30px 0px 30px;
   grid-area: nav;
 }
+<<<<<<< HEAD
 @media screen and (min-width: 1400px) {
   .navbar-header button {
     display: none;
@@ -75,6 +89,10 @@ h2 {
   .navbar-header ul li {
     padding: 0px 30px;
   }
+=======
+.navbar-header ul {
+  display: none;
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
 }
 
 .section1 {
@@ -83,6 +101,7 @@ h2 {
   margin: 90px 30px 0px 30px;
   align-items: stretch;
   justify-items: center;
+<<<<<<< HEAD
 }
 @media screen and (min-width: 1400px) {
   .section1 {
@@ -109,17 +128,45 @@ h2 {
 }
 .section2 h2 {
   margin-bottom: 30px;
+=======
+}
+.section1 .section1text {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Alata";
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+.section1 .section1text h2 {
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 40px 0px;
+}
+
+.section2 h2 {
+  margin-bottom: 30px;
+  font-family: "Josefin Sans";
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
 }
 .section2 button {
   margin-top: 30px;
   background-color: white;
   border: 1px solid black;
+<<<<<<< HEAD
   padding: 10px 30px;
   font-family: "Alata";
   font-weight: 500;
   letter-spacing: 0.5rem;
   font-size: 1.4rem;
   line-height: 1.4rem;
+=======
+  padding: 10px 50px;
+  font-family: "Alata";
+  letter-spacing: 0.3rem;
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
 }
 .section2 .img-creations {
   width: 85%;
@@ -127,6 +174,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+<<<<<<< HEAD
 }
 @media screen and (min-width: 1400px) {
   .section2 .img-creations {
@@ -151,6 +199,24 @@ h2 {
   text-shadow: 1px 1px black;
 }
 .section2 .img-creations .card-creation li {
+=======
+}
+.section2 .img-creations .card-creation {
+  display: grid;
+  align-items: center;
+}
+.section2 .img-creations .card-creation * {
+  grid-area: 1/1/-1/-1;
+  text-align: left;
+  color: white;
+}
+.section2 .img-creations .card-creation p {
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+}
+.section2 .img-creations li {
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
   margin: 10px 0px;
 }
 
@@ -162,18 +228,22 @@ footer {
   color: white;
   margin-top: 110px;
 }
+<<<<<<< HEAD
 @media screen and (min-width: 1400px) {
   footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
 }
+=======
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
 footer .topfooter {
   margin: 30px 0;
   display: grid;
   justify-items: center;
   justify-content: center;
 }
+<<<<<<< HEAD
 @media screen and (min-width: 1400px) {
   footer .topfooter {
     display: flex;
@@ -181,11 +251,14 @@ footer .topfooter {
     margin: 0;
   }
 }
+=======
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
 footer .topfooter .logo {
   margin-top: 20px;
   margin-bottom: 40px;
   width: 85%;
 }
+<<<<<<< HEAD
 @media screen and (min-width: 1400px) {
   footer .topfooter .logo {
     margin-top: 3rem;
@@ -222,15 +295,22 @@ footer .bottomfooter p {
   font-size: 1.5rem;
   color: gray;
   line-height: 2.5rem;
+=======
+footer .topfooter .list-top li {
+  margin-bottom: 20px;
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
 }
 footer .bottomfooter .list-footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+<<<<<<< HEAD
 }
 @media screen and (min-width: 1400px) {
   footer .bottomfooter .list-footer {
     display: flex;
     width: 60%;
   }
+=======
+>>>>>>> f9f30a50de550c677cd466941995866749a6f063
 }/*# sourceMappingURL=index.css.map */
