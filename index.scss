@@ -1,125 +1,257 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  /* -----------------------Hero -------------------------*/
+body {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  font-family: "Alata";
+  font-size: 1.5rem;
+}
+// .container {
+//   width: 80%;
+//   margin: 0 auto;
+// }
+
+h2 {
+  font-family: "Josefin Sans";
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: black;
+}
+// header -------------------
 
 .header1 {
+  min-height: 100vh;
+  color: white;
+  background: url("./maquette-main/loopstudios-landing-page-main/images/mobile/image-hero.jpg")
+    center/cover;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas:
+    "nav nav"
+    "titre titre";
+
+  @media screen and (min-width: 1400px) {
     background: url("./maquette-main/loopstudios-landing-page-main/images/desktop/image-hero.jpg")
       center/cover;
-    height: 100vh;
-    h1 {
-        margin-top: 150px;
-        width: 50%;
-        text-transform: uppercase;
-        color: white;
-        font-size: 60px;
-        border: 3px solid;
-        padding: 30px 30px 30px 30px;
-        font-family: "Josefin Sans", sans-serif;
-      }
-      
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        nav {
-            display: flex;
-            margin: 50px 0px;
-            ul {
-                display: flex;
-                padding: 0px;
-                li {
-                    margin: 0px 20px;
-                    font-family: "Alata", sans-serif;
-                    list-style: none;
-                  }
-              }
-          }
-      }
+    padding: 0px 100px;
+    grid-template-areas:
+      "nav nav"
+      "titre x";
   }
-  
-
-  /* -----------------------Main/ Section 1-------------------------*/
-
-.section1 {
-    margin-top: 150px;
-    position: relative;
-    .section1text {
-        position: absolute;
-        top: 70%;
-        left: 62%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        h2 {
-            font-size: 48px;
-            font-family: "Josefin Sans";
-            font-weight: 100;
-            text-transform: uppercase;
-            padding: 60px 40px 10px 40px;
-            text-align: center;
-          }
-          p {
-            font-family: "Alata";
-            font-weight: 100;
-            text-align: center;
-            padding: 20px 100px 10px 100px;
-          }
-      }
+  .container-title {
+    grid-area: titre;
   }
-  
-/* -----------------------Main/ Section2-------------------------*/
 
-.section2{
+  h1 {
+    text-align: start;
+    border: 2px solid white;
+    text-transform: uppercase;
+    padding: 30px;
+    margin: 20px;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    line-height: 3.8rem;
+    font-size: 4rem;
+  }
+}
 
-    .header2 {
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h2 {
-        font-size: 48px;
-        font-family: "Josefin Sans";
-        font-weight: 100;
-        text-transform: uppercase;
-      }
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px 30px 0px 30px;
+  grid-area: nav;
+
+  @media screen and (min-width: 1400px) {
     button {
-        background-color: #000000;
-        color: white;
-        font-family: "Alata";
-        padding: 5px 25px;
-        letter-spacing: 4px;
-        margin-right: 350px;
+      display: none;
+    }
+  }
+
+  ul {
+    display: none;
+
+    @media screen and (min-width: 1400px) {
+      display: block;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        padding: 0px 30px;
       }
     }
-    .img-creations {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        li {
-            margin-bottom: 20px;
-            pad: 0px;
-          }
-      }
-}
-/* -----------------------Footer-------------------------*/
-footer {
-    background-color: #000000;
   }
-  
-  
-  
-  
-  
- 
-  
-  
+}
 
+// 1ere section -------------------
 
-  
+.section1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin: 90px 30px 0px 30px;
+  align-items: stretch;
+  justify-items: center;
 
+  @media screen and (min-width: 1400px) {
+    grid-template-columns: 1fr 1fr;
+  }
 
-  
+  .section1text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Alata";
+    font-weight: 100;
+    color: gray;
+    margin-bottom: 40px;
+    width: 85%;
+
+    h2 {
+      margin: 40px 0px;
+    }
+  }
+}
+
+// 2eme section -------------------
+
+.section2 {
+  @media screen and (min-width: 1400px) {
+    margin-top: 150px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  button {
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 30px;
+    font-family: "Alata";
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  .img-creations {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    @media screen and (min-width: 1400px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .card-creation {
+      display: grid;
+      align-items: center;
+
+      * {
+        grid-area: 1 / 1 / -1 / -1;
+        text-align: left;
+        color: white;
+      }
+
+      p {
+        padding-left: 20px;
+        text-transform: uppercase;
+        font-family: "Josefin Sans";
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        text-shadow: 1px 1px black;
+      }
+      li {
+        margin: 10px 0px;
+      }
+    }
+  }
+}
+
+// footer -------------------
+
+footer {
+  background-color: black;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  justify-items: center;
+  color: white;
+  margin-top: 110px;
+
+  @media screen and (min-width: 1400px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .topfooter {
+    margin: 30px 0;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1400px) {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .logo {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      width: 85%;
+      @media screen and (min-width: 1400px) {
+        margin-top: 3rem;
+        margin-bottom: 0;
+      }
+    }
+    .list-top {
+      @media screen and (min-width: 1400px) {
+        display: flex;
+      }
+
+      li {
+        margin-bottom: 20px;
+        font-family: "Alata";
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-weight: 100;
+        @media screen and (min-width: 1400px) {
+          margin-right: 3.2rem;
+        }
+      }
+    }
+  }
+  .bottomfooter {
+    @media screen and (min-width: 1400px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    p {
+      font-family: "Alata";
+      font-size: 1.5rem;
+      color: gray;
+      line-height: 2.5rem;
+    }
+    .list-footer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      @media screen and (min-width: 1400px) {
+        display: flex;
+        width: 60%;
+      }
+    }
+  }
+}
